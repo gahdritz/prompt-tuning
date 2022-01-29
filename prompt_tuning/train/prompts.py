@@ -153,7 +153,7 @@ class Prompt(nn.Module):
     combine: A function that combines the prompt and the embedded input.
   """
   prompt: nn.Module
-  combine: Callable[[Array, Array, Array], Array] = prefix_prompt
+  combine: Callable[[Array, Array, Array], Array] = prefix_prompt_after_bos
 
   def __call__(self, x, x_embed):
     prompt = self.prompt(x, x_embed)
