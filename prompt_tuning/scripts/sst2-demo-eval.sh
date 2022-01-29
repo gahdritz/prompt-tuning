@@ -29,7 +29,7 @@ python3 -m t5x.eval \
   --gin.CHECKPOINT_PATH="'${PRETRAINED_MODEL}'" \
   --gin.EVAL_OUTPUT_DIR="'${EVAL_DIR}'" \
   --gin.utils.DatasetConfig.split="'validation'" \
-  --gin.utils.DatasetConfig.batch_size="128" \
+  --gin.utils.DatasetConfig.batch_size="4" \
   --gin.USE_CACHED_TASKS="False" \
   --gin.PROMPT_FILE="'${PROMPT_FILE}'" \
   --tfds_data_dir=${TFDS_DATA_DIR}
