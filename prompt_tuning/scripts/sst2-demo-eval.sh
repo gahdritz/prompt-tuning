@@ -17,7 +17,7 @@ echo "- ${FLAXFORMER_DIR}"
 echo "- ${PROMPT_DIR}"
 echo "============================="
 PRETRAINED_MODEL="gs://t5-data/pretrained_models/t5x/t5_1_1_lm100k_small/checkpoint_1100000"
-PROMPT_FILE="`python3 -m prompt_tuning.scripts.find_module prompt_tuning`/pretrained_prompts/t5_1_1_lm100k_base/sst2.npy"
+PROMPT_FILE="`python3 -m prompt_tuning.scripts.find_module prompt_tuning`/pretrained_prompts/t5_1_1_lm100k_base/sst2_small.npy"
 
 python3 -m t5x.eval \
   --gin_search_paths="${T5X_DIR},${FLAXFORMER_DIR},${PROMPT_DIR}" \
