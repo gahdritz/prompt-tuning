@@ -54,14 +54,11 @@ setuptools.setup(
         "absl-py",
         "flax",
         "gin-config",
-        "jax[tpu]>=0.2.16",
         "numpy",
         "seqio-nightly",
         "t5",
         "tensorflow",
         "tensorflow_datasets",
-        # Install from git as they have setup.pys but are not on PyPI.
-        "t5x @ git+https://github.com/google-research/t5x@main#egg=t5x",
         "flaxformer @ git+https://github.com/google/flaxformer@main#egg=flaxformer",
     ],
     extras_require={
@@ -86,9 +83,7 @@ setuptools.setup(
         "neural networks",
         "pre-trained language models",
         "nlp",
-        "jax",
         "flax",
         "t5",
-        "t5x",
     ]
 )
