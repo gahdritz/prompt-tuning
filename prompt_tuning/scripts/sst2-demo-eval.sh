@@ -21,7 +21,7 @@ PROMPT_FILE="`python3 -m prompt_tuning.scripts.find_module prompt_tuning`/pretra
 
 python3 -m t5x.eval \
   --gin_search_paths="${T5X_DIR},${FLAXFORMER_DIR},${PROMPT_DIR}" \
-  --gin_file="prompt_tuning/configs/models/t5_1_1_base_prompt.gin" \
+  --gin_file="prompt_tuning/configs/models/t5_1_1_small_prompt.gin" \
   --gin_file="prompt_tuning/configs/runs/prompt_eval.gin" \
   --gin.MIXTURE_OR_TASK_NAME="'taskless_glue_sst2_v200_examples'" \
   --gin.MIXTURE_OR_TASK_MODULE="'prompt_tuning.data.glue'" \
